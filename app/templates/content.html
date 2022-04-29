@@ -1,12 +1,18 @@
 
+{%block styles%}
+<link rel="stylesheet" href="{{url_for('static', filename='css/content.css')}}">
+{%endblock%}
 
-
+{%for response in responses %}
 <div class="card" style="width: 18rem;">
     <img src="" class="card-img-top" alt="">
     <div class="card-body">
         <p class="card-text">
-        <h6>News Title</h6>
-        <p>News Text</p>
+        <h6>{{response['source']['name']}}</h6>
+        <p>{{response['title']}}</p>
         </p>
     </div>
 </div>
+{%endfor%}
+
+<!-- chnage api endpoint to source us  -->

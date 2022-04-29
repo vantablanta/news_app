@@ -4,7 +4,6 @@
     width: 100%;
     
 }
-
 .navbar .nav-link{
     color: #F5FBEF;
 }
@@ -14,7 +13,4 @@
 .navbar .nav-link:active{
     background-color: #F5FBEF;
    
-}
-.logo{
-    width: 5vw;
 }
