@@ -1,6 +1,6 @@
 class Config:
     """Parent Config Class """
-    BASE_URL = 'https://newsapi.org/v2/everything?sources=bbc-news&apiKey={}'
+    BASE_URL = 'https://newsapi.org/v2/everything?q=kenya&apiKey=&apiKey={}'
 
 class ProdConfig(Config):
     """Production Config Class"""
