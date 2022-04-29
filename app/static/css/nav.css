@@ -1,6 +1,8 @@
 .navbar{
     background-color: #9D69A3;
     font-weight: bold;
+    width: 100%;
+    
 }
 
 .navbar .nav-link{
@@ -12,4 +14,7 @@
 .navbar .nav-link:active{
     background-color: #F5FBEF;
    
+}
+.logo{
+    width: 5vw;
 }
