@@ -1,0 +1,22 @@
+{%block styles%}
+<link rel="stylesheet" href="{{url_for('static', filename='css/subscribe.css')}}">
+{%endblock%}
+
+<div class="row d-flex justify-content-center align-items-center subscribe m-1 p-3">
+    <div class="col-md-6">
+        <div class="card card-subscribe p-5 mt-4 mb-4">
+            <div class="text-center">
+                <img src="{{url_for('static', filename='assets/subscribe.png')}}" class="w-50 h-25">
+                <span class="d-block mt-3">
+                    Subscribe to our newsletter in order to recieve
+                    <br> daily 
+                    news updates
+                </span>
+                <div class="input-group mb-3 mt-5">
+                    <input type="text" class="form-control" placeholder="Enter Email" aria-label="Enter Email" aria-describedby="basic-addon2">
+                    <span class="input-group-text" id="basic-addon2">Subscribe</span>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+.subscribe{
+    background-color: #40F99B;
+    color: #61707D;
+}
+.card-subscribe {
+    background-color: #eee;
+}
+#basic-addon2{
+    background-color: #40F99B;
+}
+#basic-addon2:hover{
+    background-color: #61707D;
+    color: #F5FBEF;
+}
