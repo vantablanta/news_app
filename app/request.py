@@ -11,5 +11,4 @@ def get_news():
     """API Call"""
     base_url = url.format(api_key)
     response = requests.get(base_url).json()
-    print(response['articles'])
     return response['articles']
