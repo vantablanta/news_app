@@ -15,3 +15,7 @@ def news():
     news = get_news()
     kenya = get_kenya_news()
     return render_template("news.html", news = news, kenya = kenya)
+
+@app.route("/about")
+def about():
+    return render_template("about.html")

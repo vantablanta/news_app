@@ -1,0 +1,20 @@
+{%extends 'base.html'%}
+{% include 'nav.html'%}
+{%block body%}
+
+    <div class="row text-center mt-5">
+        <div class="container">
+            <h1>About NewsToday</h1>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro error laudantium odio culpa ipsum minus,
+                itaque eaque. Dolores optio distinctio praesentium. Sunt exercitationem inventore delectus. Culpa ipsum
+                nisi officiis modi?
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro error laudantium odio culpa ipsum minus,
+                itaque eaque. Dolores optio distinctio praesentium. Sunt exercitationem inventore delectus. Culpa ipsum
+                nisi officiis modi?
+            </p>
+            <img class="w-100" src="{{url_for('static',filename='assets/news.jpg')}}" alt="Image of Nairobi"> 
+        </div>     
+    </div>
+{%endblock%}
