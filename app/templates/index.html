@@ -27,18 +27,23 @@
                     <div class="card-body">
                         <h5 class="card-title"><strong>{{response['title']}}</strong></h5>
                         <p class="card-text mt-3">{{response['description']}}</p>
-                        <a href="#" class="btn read-more">Read Article</a>
+                        <p href="#" class="btn read-more">
+                            <a href="{{response['url']}}">Read More</a>
+                        </p>
                     </div>
                 </div>
                 {%endfor%}
             </div>
+
             <div>
                 {% include 'subscribe.html'%}           
+            </div>
+            <div>
+                {% include 'kenya.html'%}           
             </div>
         </div>
 
         <div class="col-md-4 mt-3">
-            <h3>Top Sources</h3>
             {%include 'sources.html'%}
         </div>
     </div>

@@ -6,3 +6,11 @@ body {
     font-family: 'Rubik', sans-serif;
     background-color: #F5FBEF;
 }
+
+.read-more a{
+    color: #61707D;
+    text-decoration: none;
+}
+.read-more a:hover{
+    color: #40F99B;
+}

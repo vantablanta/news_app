@@ -6,6 +6,7 @@ api_key = app.config['API_KEY']
 secret_key = app.config['SECRET_KEY']
 base_url = app.config['BASE_URL']
 sources_url = app.config['SOURCES_URL']
+kenya_url = app.config['KENYA_URL']
 
 
 
@@ -20,3 +21,9 @@ def get_sources():
     url = sources_url.format(api_key)
     response = requests.get(url).json()
     return response['sources']
+
+def get_kenya_news():
+    """SOURCES API Call"""
+    url = kenya_url.format(api_key)
+    response = requests.get(url).json()
+    return response['articles']
