@@ -3,6 +3,8 @@ from flask import render_template
 from app import app
 from .request import get_news, get_sources, get_kenya_news
 
+
+
 @app.route("/")
 def index():
     sources = get_sources()
