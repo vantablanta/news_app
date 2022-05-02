@@ -1,9 +1,6 @@
 import requests
 from app import app
-from .models import source, news
-
-Source = source.Source
-News = news.News
+from .models import Source, News
 
 api_key = app.config['API_KEY']
 secret_key = app.config['SECRET_KEY']
