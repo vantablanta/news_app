@@ -1,5 +1,6 @@
 import requests
 from app import app
+from .models import source, news
 
 
 api_key = app.config['API_KEY']
