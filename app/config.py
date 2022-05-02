@@ -1,3 +1,6 @@
+
+
+
 class Config:
     """Parent Config Class """
     BASE_URL = 'https://newsapi.org/v2/top-headlines?q=news&apiKey={}'
