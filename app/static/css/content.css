@@ -3,3 +3,12 @@
     border-color: #61707D;
     color: #F5FBEF;
 }
+
+.view{
+    color: #F5FBEF;
+    text-decoration: none;
+}
+
+.view:hover{
+    color: #40F99B;
+}

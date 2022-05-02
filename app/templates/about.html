@@ -2,19 +2,21 @@
 {% include 'nav.html'%}
 {%block body%}
 
-    <div class="row text-center mt-5">
-        <div class="container">
-            <h1>About NewsToday</h1>
-            <hr>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro error laudantium odio culpa ipsum minus,
-                itaque eaque. Dolores optio distinctio praesentium. Sunt exercitationem inventore delectus. Culpa ipsum
-                nisi officiis modi?
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro error laudantium odio culpa ipsum minus,
-                itaque eaque. Dolores optio distinctio praesentium. Sunt exercitationem inventore delectus. Culpa ipsum
-                nisi officiis modi?
-            </p>
-            <img class="w-100" src="{{url_for('static',filename='assets/news.jpg')}}" alt="Image of Nairobi"> 
-        </div>     
+<div class="row text-center m-3 p-5">
+    <h1 class="mb-4">About NewsToday</h1>
+    <hr>
+    <div class="col-md-6">
+        <img class="w-100" src="{{url_for('static',filename='assets/news2.jpg')}}" alt="Image of Nairobi">
     </div>
+    <div class="col-md-6 p-5">
+        <p>We bring you the latest and accurate news coverage from sources around the world.
+          We keep you updated 24/7 on what is happening in various parts of the world.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro error laudantium odio culpa ipsum minus,
+            itaque eaque. Dolores optio distinctio praesentium. Sunt exercitationem inventore delectus. Culpa ipsum
+            nisi officiis modi?
+        </p>
+    </div>
+
+</div>
 {%endblock%}
