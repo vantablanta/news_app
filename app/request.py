@@ -1,6 +1,6 @@
 import requests
 from app import app
-from .models import Source, News
+from app.models import Source, News
 
 api_key = app.config['API_KEY']
 secret_key = app.config['SECRET_KEY']
@@ -26,6 +26,5 @@ def get_kenya_news():
     """SOURCES API Call"""
     url = kenya_url.format(api_key)
     response = requests.get(url).json()
-
-
+    response['articles']
     return response['articles']
