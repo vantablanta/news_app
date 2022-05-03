@@ -1,14 +1,20 @@
 # initialize the application 
-import os
 from flask import Flask
-from .config import DevConfig
+from config import config_options
 
 
 
 # configurations
-app = Flask(__name__, instance_path=os.path.join(os.path.abspath(os.curdir), 'instance'),instance_relative_config = True)
-app.config.from_pyfile('config.py')
+def create_app(config_name):
+    app = Flask(__name__)
+    app.config.from_object(config_options[config_name])
 
+    # Registering the blueprint
+    from .main import main as main_blueprint
+    app.register_blueprint(main_blueprint)
 
-from app import views
-from app import error
+    # setting config
+    # from .request import configure_request 
+    # configure_request(app)
+
+    return app
