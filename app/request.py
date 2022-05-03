@@ -6,14 +6,12 @@ base_url ='https://newsapi.org/v2/top-headlines?q=news&apiKey={}'
 sources_url = 'https://newsapi.org/v2/top-headlines/sources?apiKey={}'
 kenya_url = 'https://newsapi.org/v2/everything?q=kenya&apiKey={}'
 
-
 def configure_request(app):
     global api_key,base_url, sources_url, kenya_url
     # api_key = app.config['API_KEY']
     # base_url = app.config['BASE_URL']
     # sources_url = app.config['SOURCES_URL']
     # kenya_url = app.config['KENYA_URL']
-
 
 def get_news():
     """NEWS API Call"""

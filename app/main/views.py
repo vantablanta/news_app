@@ -4,7 +4,6 @@ from . import main
 from ..request import get_news, get_sources, get_kenya_news
 
 
-
 @main.route("/")
 def index():
     sources = get_sources()
